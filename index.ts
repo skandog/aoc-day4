@@ -9,6 +9,12 @@ const puzzleInput = `2-4,6-8
 
 let puzzleInputArr = puzzleInput.split('\n');
 
+let parsedPuzzleInputArr = []
+
+for (let i = 0; i < puzzleInputArr.length; i++) {
+    parsedPuzzleInputArr[i] = puzzleInputArr[i].split(',')
+}
 
 
-console.log(puzzleInputArr);
+
+console.log(parsedPuzzleInputArr);
